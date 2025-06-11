@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="IA.jpg" type="image/x-icon" />
+  <title>Código Humano - Detalles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+      background: transparent;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      z-index: -1;
+    }
+
+    body {
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .encabezado {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .logo-izquierda, .logo-derecha {
+      width: 80px;
+      height: auto;
+    }
+
+    .center-text {
+      text-align: center;
+      color: #ffffff;
+      font-size: 1rem;
+      flex: 1;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #00ffc8;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00ffc8;
+    }
+
+    h2 {
+      color: #00ffd5;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .frase {
+      font-style: italic;
+      font-size: 1.3rem;
+      color: #fffd82;
+      text-align: center;
+      margin: 40px 0;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #00ffc8; }
+      100% { text-shadow: 0 0 20px #00ffc8, 0 0 30px #00ffc8; }
+    }
+
+    .galeria {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .caja {
+      background: #111;
+      border: 2px solid #00ffc8;
+      border-radius: 12px;
+      padding: 20px;
+      width: 270px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .caja:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffc8;
+    }
+
+    .caja h3 {
+      color: #00ffd5;
+    }
+
+    .boton-volver {
+      display: block;
+      margin: 40px auto 0;
+      background: #00ffc8;
+      color: #000;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .boton-volver:hover {
+      background: #00c4a7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Partículas -->
+  <div id="particles-js"></div>
+
+  <header>
+    <div class="encabezado">
+      <img src="ipn.png" alt="Logo IPN" class="logo-izquierda">
+      <div class="center-text">
+        INSTITUTO POLITÉCNICO NACIONAL<br>
+        CENTRO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS N.8 "NARCISO BASSOLS"
+      </div>
+      <img src="cecyt.png" alt="Logo CECyT 8" class="logo-derecha">
+    </div>
+    <h1>Detalles del Proyecto: Código Humano</h1>
+    <p>Grupo 6IM12 · Profesora: Anel Guerrero Hernández</p>
+  </header>
+
+  <section>
+    <h2>¿Qué es Código Humano?</h2>
+    <p>
+      "Código Humano: Creando el Futuro con Ingenio y Tecnología" es una iniciativa que integra la Inteligencia Artificial con las Habilidades Blandas,
+      demostrando que el futuro se construye combinando tecnología con el factor humano: empatía, creatividad, pensamiento crítico y comunicación.
+    </p>
+
+    <div class="frase">
+      “La tecnología más poderosa nace de un código... pero evoluciona con el corazón humano.”
+    </div>
+
+    <h2>IA + Habilidades Blandas en Nuestras Materias</h2>
+    <div class="galeria">
+      <div class="caja"><h3>Probabilidad y Estadística</h3><p>Reforzar temas de probabilidad a través de la IA (IA TUTORA)</p></div>
+      <div class="caja"><h3>Física</h3><p>Electromagnetismo: desarrollo de una app con un globo terrestre y brújula virtual.</p></div>
+      <div class="caja"><h3>Química</h3><p>Velocidad de reacción y equilibrio químico con simuladores de IA para clases teóricas y experimentales.</p></div>
+      <div class="caja"><h3>Inglés</h3><p>Uso de “Learning Accelerators” en Teams para practicar estructuras gramaticales y vocabulario de la Unidad 3.</p></div>
+      <div class="caja"><h3>Orientación Juvenil y Profesional</h3><p>Chatbots y apps IA para tests vocacionales y ofertas laborales integrando habilidades blandas.</p></div>
+      <div class="caja"><h3>Seguridad Informática</h3><p>Análisis y descifrado de mensajes cifrados usando herramientas de IA para verificar resultados.</p></div>
+      <div class="caja"><h3>Programación de Apps</h3><p>Desarrollo de apps móviles con interacción, almacenamiento de datos, IA y habilidades blandas.</p></div>
+      <div class="caja"><h3>Introducción a la Ciencia de Datos</h3><p>Obtención de datos mediante IA sobre gestión del tiempo de 4500 estudiantes de preparatoria.</p></div>
+      <div class="caja"><h3>Gestión del Tiempo</h3><p>Uso de IA para identificar hábitos y crear estrategias personalizadas de organización académica y emocional.</p></div>
+    </div>
+
+    <a class="boton-volver" href="Invitacion.html">&larr; Volver a la Página Principal</a>
+  </section>
+
+  <!-- Script de Partículas -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#00ffc8" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00ffc8",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>

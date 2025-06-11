@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="IA.jpg" type="image/x-icon" />
+  <title>Invitación - Proyecto Aula 6IM12</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      padding: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 10px 30px;
+      background-color: rgba(255, 255, 255, 0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 0 15px #00ffc8;
+    }
+
+    header .logo {
+  flex: 0 0 130px; /* Fija un ancho mínimo para que no se comprima demasiado */
+  display: flex;
+  justify-content: center; /* Centra la imagen dentro del contenedor */
+  align-items: center;
+}
+
+header .logo img {
+  max-height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+header .logo:last-child {
+  margin-left: 15px; /* Mueve un poco la imagen derecha hacia el centro */
+}
+
+
+
+    .center-text {
+      text-align: center;
+      flex: 1;
+      color: #00ffc8;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      font-weight: bold;
+    }
+
+    .container {
+      margin-top: 140px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px #00ffc8;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00ffc8;
+      margin-bottom: 15px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      color: #00ffd5;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #00ffc8;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .boton:hover {
+      background: #00c4a7;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffc8;
+    }
+
+    .info {
+      font-size: 0.95rem;
+      color: #fffd82;
+      margin-top: 2em;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.85rem;
+      color: #cfd8dc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffc8, 0 0 20px #00ffc8, 0 0 30px #00ffc8;
+      }
+      to {
+        text-shadow: 0 0 15px #00ffd5, 0 0 30px #00ffd5, 0 0 45px #00ffd5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Partículas -->
+  <div id="particles-js"></div>
+
+  <header>
+    <div class="logo">
+      <img src="ipn.png" alt="Logo IPN">
+    </div>
+    <div class="center-text">
+      INSTITUTO POLITÉCNICO NACIONAL<br>
+      CENTRO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS N.8 "NARCISO BASSOLS"
+    </div>
+    <div class="logo">
+      <img src="cecyt.png" alt="Logo CECyT 8">
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>PROYECTO DE AULA 6IM12</h1>
+    <h2>Profesora: Anel Guerrero Hernández</h2>
+    <p>
+      Te invitamos cordialmente a ser parte de nuestro evento académico <strong>“Código Humano: Creando el Futuro con Ingenio y Tecnología”</strong>.<br>
+      Un espacio donde convergen la <strong>Inteligencia Artificial</strong> y las <strong>Habilidades Blandas</strong> para diseñar soluciones con visión humana y tecnológica.
+    </p>
+    <p>
+      Acompáñanos a descubrir cómo los jóvenes del grupo <strong>6IM12</strong> del CECyT 8 están creando el futuro con pasión, ciencia e innovación.
+    </p>
+    <p>
+      Estimada comunidad, tenemos el placer de invitarles a la presentación de nuestro Proyecto de Aula, donde mediante la inteligencia artificial y las habilidades blandas promovemos actividades que faciliten la innovación, la colaboración eficaz y la toma de decisiones estratégicas.
+    </p>
+    <p><strong>Martes 24 de junio a las 11:00 horas en el Auditorio del Plantel.</strong></p>
+
+    <a class="boton" href="detalle_codigo_humano.html">Explora el futuro</a>
+
+    <div class="info">
+      <p><strong>Ubicación:</strong> Auditorio del Plantel</p>
+      <p><strong>Fecha:</strong> 24 de junio</p>
+      <p><strong>Hora:</strong> 11:00 horas</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Grupo 6IM12 | Proyecto Aula | Diseñado con tecnología e inspiración humana</p>
+  </footer>
+
+  <!-- Particles.js CDN + Configuración -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": "#00ffc8" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000000" },
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+        },
+        "size": {
+          "value": 4,
+          "random": true,
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00ffc8",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 3,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "repulse": { "distance": 100 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
